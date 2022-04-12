@@ -19,17 +19,6 @@ public class Travel {
 
     }
 
-    @Override
-    public String toString() {
-        return "Travel{" +
-                "country=" + country +
-                ", duration_in_days=" + duration_in_days +
-                ", type=" + type +
-                ", in_stock=" + in_stock +
-                ", price_in_uah=" + price_in_uah +
-                '}'+"\n";
-    }
-
     public Country getCountry() {
         return country;
     }
@@ -68,5 +57,16 @@ public class Travel {
 
     public void setPrice_in_uah(int price_in_uah) {
         this.price_in_uah = price_in_uah;
+    }
+
+    @Override
+    public String toString() {
+        return "Travel{" +
+                "country=" + country +
+                ", duration_in_days=" + duration_in_days +
+                ", type=" + type +
+                ", in_stock=" + in_stock +
+                ", price_in_uah=" + price_in_uah +
+                '}';
     }
 }
